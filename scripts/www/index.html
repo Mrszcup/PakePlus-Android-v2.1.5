@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>PakePlus</title>
-    </head>
-    <body>
-        PakePlus
-    </body>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>DingTask</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      touch-action: pan-x pan-y;
+    }
+    #fullscreen-container {
+      width: 100vw;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    #fullscreen-iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="fullscreen-container">
+    <iframe id="fullscreen-iframe" 
+            src="https://alidocs.dingtalk.com/aitable/share/view/v0154Lq35o1kov3Ml7E_fpqogm5xtob5dbnqspkg4_vzyx9y67xez8ftxdxdtcs" 
+            allowfullscreen>
+    </iframe>
+  </div>
+</body>
 </html>
